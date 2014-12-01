@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/yli/DevCamp/rask/lib'
+let g:netrw_dirhist_2='/Users/yli/DevCamp/liyu1981.github.io/_posts'
+let g:netrw_dirhist_3='/Users/yli/DevCamp/dogeos/DogeOS/overlay/dogeos/share/pxe'
+let g:netrw_dirhist_4='/Users/yli/DevCamp/nin-example'
+let g:netrw_dirhist_5='/Users/yli/DevCamp/little_riakcore_book/00-intro'
+let g:netrw_dirhist_6='/usr/local/Cellar/asterisk/12.2.0'
+let g:netrw_dirhist_7='/Users/yli/DevCamp/yelp-crawl/raw/Scottsdale,AZ'
+let g:netrw_dirhist_8='/Users/yli/DevCamp/yelp-crawl/raw/Beach,CA'
+let g:netrw_dirhist_9='/Users/yli/DevCamp/DynamicPoint/client'

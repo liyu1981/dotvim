@@ -1,0 +1,9 @@
+[submodule "bundle/filepirate"]
+	path = bundle/filepirate
+	url = https://github.com/liyu1981/filepirate.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/rking/ag.vim
