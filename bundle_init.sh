@@ -5,3 +5,6 @@ git submodule update
 cd bundle/filepirate/plugin/
 make
 cd -
+
+# brew install Ag
+sudo brew install the_silver_searcher
