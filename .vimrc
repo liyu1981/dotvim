@@ -74,7 +74,9 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P
 set bsdir=buffer
 
 "colorscheme desert
-colorscheme jellybeans
+"colorscheme jellybeans
+"colorscheme desertEx
+colorscheme flattown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Programming
@@ -209,6 +211,8 @@ autocmd BufEnter *.py set noexpandtab
 " ejs autodetect
 au BufNewFile,BufRead *.ejs setf ejs
 
+" airline
+
 " gui setting
 if has('gui_running')
   if has('gui_gtk')
@@ -222,6 +226,7 @@ if has('gui_running')
   if has('gui_macvim')
     set guifont=set guifont=Andale\ Mono:h14
     set antialias
+    colorscheme flattown
   endif
   set nu
   let g:filepirate_accept_to = "tabe"
