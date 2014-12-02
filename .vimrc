@@ -210,9 +210,16 @@ au BufNewFile,BufRead *.ejs setf ejs
 
 " gui setting
 if has('gui_running')
-  " guifont
-  set guifont=Inconsolata\ 13
+  if has('gui_gtk')
+    " setting for linux gvim
+    set guifont=Consolas\ 13
+    colorscheme jellybeans
+    " get back the shift insert
+    map  <silent>  <S-Insert>  "+p
+    imap <silent>  <S-Insert>  <Esc>"+pa
+  endif
   set nu
-  colorscheme desert
   let g:filepirate_accept_to = "tabe"
+else
+  let g:filepirate_accept_to = "vsp"
 endif
