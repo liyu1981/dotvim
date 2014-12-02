@@ -43,3 +43,6 @@
 [submodule "bundle/desertEx"]
 	path = bundle/desertEx
 	url = https://github.com/vim-scripts/desertEx.git
+[submodule "bundle/vim-railscasts-theme"]
+	path = bundle/vim-railscasts-theme
+	url = https://github.com/chankaward/vim-railscasts-theme.git
