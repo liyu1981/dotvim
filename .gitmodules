@@ -22,3 +22,6 @@
 [submodule "bundle/Emmet.vim"]
 	path = bundle/Emmet.vim
 	url = https://github.com/vim-scripts/Emmet.vim.git
+[submodule "bundle/splitjoin"]
+	path = bundle/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim.git
