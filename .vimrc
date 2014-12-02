@@ -218,6 +218,10 @@ if has('gui_running')
     map  <silent>  <S-Insert>  "+p
     imap <silent>  <S-Insert>  <Esc>"+pa
   endif
+  if has('gui_macvim')
+    set guifont=set guifont=Andale\ Mono:h14
+    set antialias
+  endif
   set nu
   let g:filepirate_accept_to = "tabe"
 else
