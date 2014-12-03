@@ -218,7 +218,7 @@ if has('gui_running')
   if has('gui_gtk')
     " setting for linux gvim
     set guifont=Consolas\ 13
-    colorscheme jellybeans
+    colorscheme flattown
     " get back the shift insert
     map  <silent>  <S-Insert>  "+p
     imap <silent>  <S-Insert>  <Esc>"+pa
