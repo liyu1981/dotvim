@@ -125,7 +125,7 @@ set paste
 " folding setting
 set foldmethod=marker
 set foldlevel=3
-set foldcolumn=1
+"set foldcolumn=1
 
 " when save (f2), clean buffer and trim every lines
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
