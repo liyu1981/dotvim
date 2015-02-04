@@ -78,6 +78,14 @@ set bsdir=buffer
 "colorscheme desertEx
 colorscheme flattown
 
+" util for alias command
+" http://stackoverflow.com/questions/3878692/aliasing-a-command-in-vim
+fun! SetupCommandAlias(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() is# ":" && getcmdline() is# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfun
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Programming
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -180,8 +188,8 @@ augroup resCur
 augroup END
 
 " match chars after 80th column and show them in red!
-"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-"match OverLength /\%101v.\+/
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%80v.\+/
 
 " make sure that everything is in utf-8
 set ff=unix
