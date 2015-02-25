@@ -237,6 +237,8 @@ if has('gui_running')
     colorscheme flattown
   endif
   set nu
+  " set linespace in gui mode
+  set lsp=4
   let g:filepirate_accept_to = "tabe"
 else
   let g:filepirate_accept_to = "vsp"
