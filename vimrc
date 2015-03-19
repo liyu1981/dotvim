@@ -188,8 +188,7 @@ augroup resCur
 augroup END
 
 " match chars after 80th column and show them in red!
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%80v.\+/
+match Error /\%80v.\+/
 
 " make sure that everything is in utf-8
 set ff=unix
@@ -214,12 +213,15 @@ hi IndentGuidesEven ctermbg=darkgrey
 autocmd BufRead,BufNewFile *.asciidoc setlocal spell spelllang=en_us
 
 " Python setting
-autocmd BufEnter *.py set noexpandtab
+autocmd BufEnter *.py set expandtab
 
 " ejs autodetect
 au BufNewFile,BufRead *.ejs setf ejs
 
 " airline
+
+" vim-flow
+let g:flow#enable = 0
 
 " gui setting
 if has('gui_running')
@@ -235,6 +237,8 @@ if has('gui_running')
     set guifont=set guifont=Andale\ Mono:h14
     set antialias
     colorscheme flattown
+    " match chars after 80th column and show them in red!
+    match Error /\%80v.\+/
   endif
   set nu
   " set linespace in gui mode
