@@ -188,7 +188,8 @@ augroup resCur
 augroup END
 
 " match chars after 80th column and show them in red!
-match Error /\%80v.\+/
+" make it autocmd so it will survive any situation including open in tab
+autocmd BufEnter * match Error /\%80v.\+/
 
 " make sure that everything is in utf-8
 set ff=unix
@@ -259,8 +260,6 @@ if has('gui_running')
     set guifont=set guifont=Andale\ Mono:h14
     set antialias
     colorscheme flattown
-    " match chars after 80th column and show them in red!
-    match Error /\%80v.\+/
   endif
   set nu
   " set linespace in gui mode
