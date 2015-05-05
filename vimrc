@@ -189,7 +189,7 @@ augroup END
 
 " match chars after 80th column and show them in red!
 " make it autocmd so it will survive any situation including open in tab
-autocmd BufEnter * match Error /\%80v.\+/
+autocmd BufEnter * match Error /\%81v.\+/
 
 " make sure that everything is in utf-8
 set ff=unix
