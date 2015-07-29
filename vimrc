@@ -246,6 +246,13 @@ function! s:RunShellCommand(cmdline)
   1
 endfunction
 
+" nerdtree tab
+let g:nerdtree_tabs_open_on_gui_startup = 0
+
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " gui setting
 if has('gui_running')
   if has('gui_gtk')
