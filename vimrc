@@ -252,6 +252,7 @@ let g:nerdtree_tabs_open_on_gui_startup = 0
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'cr'
 
 " gui setting
 if has('gui_running')

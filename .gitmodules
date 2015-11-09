@@ -1,6 +1,6 @@
 [submodule "bundle/filepirate"]
 	path = bundle/filepirate
-	url = https://github.com/liyu1981/filepirate.git
+	url = https://github.com/nfd/filepirate.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
