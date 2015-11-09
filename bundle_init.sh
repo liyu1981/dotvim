@@ -7,4 +7,8 @@ make
 cd -
 
 # brew install Ag
-sudo brew install the_silver_searcher
+if hash brew 2>/dev/null; then
+  sudo brew install the_silver_searcher
+else
+  echo 'You need install silver_searcher by your own.'
+fi
