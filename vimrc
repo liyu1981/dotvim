@@ -276,3 +276,7 @@ if has('gui_running')
 else
   let g:filepirate_accept_to = "vsp"
 endif
+
+if $TERM_PROGRAM == 'cool'
+  colorscheme default
+endif
