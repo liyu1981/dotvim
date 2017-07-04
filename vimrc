@@ -1,5 +1,9 @@
 " init pathogen
+let g:pathogen_disabled = []
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+if !has('python3')
+  call add(g:pathogen_disabled, 'filepirate')
+endif
 execute pathogen#infect()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
