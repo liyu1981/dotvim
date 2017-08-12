@@ -73,10 +73,10 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P
 " set current dir to current buffer
 set bsdir=buffer
 
-"colorscheme desert
+colorscheme desert
 "colorscheme jellybeans
 "colorscheme desertEx
-colorscheme flattown
+"colorscheme flattown
 
 " util for alias command
 " http://stackoverflow.com/questions/3878692/aliasing-a-command-in-vim
@@ -95,21 +95,6 @@ filetype plugin indent on
 
 " syntax highlighting
 syntax on
-
-" smart indent
-set smartindent
-
-" default tab = x spaces
-set tabstop=2
-
-" softtab
-set softtabstop=2
-
-" no tab, use spaces instead
-set expandtab
-
-" auto indention
-set ai
 
 " indention width
 set cindent shiftwidth=2
@@ -187,9 +172,9 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 
-" match chars after 80th column and show them in red!
+" match chars after xxth column and show them in red!
 " make it autocmd so it will survive any situation including open in tab
-autocmd BufEnter * match Error /\%81v.\+/
+autocmd BufEnter * match Error /\%121v.\+/
 
 " make sure that everything is in utf-8
 set ff=unix
@@ -265,9 +250,9 @@ if has('gui_running')
     imap <silent>  <S-Insert>  <Esc>"+pa
   endif
   if has('gui_macvim')
-    set guifont=set guifont=Andale\ Mono:h14
+    set guifont=set guifont=inconsolata:h18
     set antialias
-    colorscheme flattown
+    colorscheme material-theme
   endif
   set nu
   " set linespace in gui mode
@@ -280,3 +265,19 @@ endif
 if $TERM_PROGRAM == 'cool'
   colorscheme default
 endif
+
+" === put these final ==
+" smart indent
+set smartindent
+
+" default tab = x spaces
+set tabstop=2
+
+" softtab
+set softtabstop=2
+
+" no tab, use spaces instead
+set expandtab
+
+" auto indention
+set ai
